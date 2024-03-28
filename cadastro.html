@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: #85CB34;  
+        }
+        
+        main {
+            margin: auto;
+            max-width: 375px;
+            background-color: #6d4dc4;
+            height: 667px;
+            box-shadow: 0px 0px 8px 2px black;
+            background-image: linear-gradient(to top, #1a0c42, #a38edd);
+        }
+
+        .coracao {
+            display: block;
+            width: 200px;
+            position: relative;
+            left: 80px;
+            padding-top: 50px;
+            bottom: 20px;
+        }
+
+        .saude{
+            display: block;
+            width: 180px;
+            position: relative;
+            left: 85px; 
+            bottom: 25px;
+        }
+        .form1{
+            position: relative;
+            width: 350px;
+            margin:  4px;
+            padding: 5px;
+            border-radius: 8px;
+
+        }
+        .idade{
+            position: relative;
+            margin:  4px;
+            padding: 5px;
+            width: 130px;
+            border-radius: 8px;
+        }
+        .butao{
+            background-color: #98df48;
+            position: relative;
+            left: 130px;
+            width: 100px;
+            height: 35px;
+            margin-top: 20px;
+            border-style: none;
+            border-radius: 50px;
+            box-shadow: 1px 2px 5px black;
+        }
+        .genero{
+            
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <img class="coracao" src="imagens/coracao1.png" alt="">
+            <img class="saude" src="imagens/Untitled__8_-removebg-preview.png" alt="">
+        </header>
+        
+
+        <div>
+            
+            <input class="form1" type="text" name="Nome" id="Nome" placeholder="Nome do completo*" required> <br>
+            <input class="form1" type="text" name="telefone" id="telefone" placeholder="Telefone*"required> <br>
+
+            <input class="idade" type="text" name="idade" id="idade" placeholder="Idade*"required>
+
+            <input class="genero" type="radio" name="sexo" id="sexmas" checked>Masculino
+            <input class="genero" type="radio" name="sexo" id="sexfem">Feminino
+            
+            <input class="form1" type="text" name="cpf" id="cpf" placeholder="CPF*"required> <br>
+            <input class="form1" type="text" name="rg" id="rg" placeholder="RG*"required> <br>
+            <input class="form1" type="text" name="endereco" id="endereco" placeholder="Endereço"required><br> 
+            
+            <input class="form1" type="text" name="endereco" id="endereco" placeholder="Crie uma senha*"required><br>   
+
+
+            <a href="telalogin.html"><input class="butao" type="button" value="cadastrar"></a>
+        </div>
+       
+    </main>
+</body>
+</html>
