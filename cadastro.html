@@ -26,7 +26,7 @@
             display: block;
             width: 200px;
             position: relative;
-            left: 80px;
+            left: 90px;
             padding-top: 50px;
             bottom: 20px;
         }
@@ -35,7 +35,7 @@
             display: block;
             width: 180px;
             position: relative;
-            left: 85px; 
+            left: 90px; 
             bottom: 25px;
         }
         .form1{
@@ -44,6 +44,7 @@
             margin:  4px;
             padding: 5px;
             border-radius: 8px;
+            margin-left: 8px;
 
         }
         .idade{
@@ -52,6 +53,7 @@
             padding: 5px;
             width: 130px;
             border-radius: 8px;
+            margin-left: 8px;
         }
         .butao{
             background-color: #98df48;
@@ -63,11 +65,32 @@
             border-style: none;
             border-radius: 50px;
             box-shadow: 1px 2px 5px black;
-        }
-        .genero{
-            
+            cursor: pointer;
         }
 
+        .butao:hover{
+            background-color: #3d660d;
+        }
+
+        .genero {
+            margin-left: 20px;
+            cursor: pointer;
+            box-shadow: 1px 2px 5px black;
+        }
+
+        .sexo{
+            display: inline-block;
+            margin: 0px;
+            color: white;
+            cursor: pointer;
+            box-shadow: 1px 2px 5px black;
+            border-radius: 8px;
+        }
+
+        .sexo:active{
+            background-color: #3d660d;
+        }
+       
     </style>
 </head>
 <body>
@@ -84,9 +107,13 @@
             <input class="form1" type="text" name="telefone" id="telefone" placeholder="Telefone*"required> <br>
 
             <input class="idade" type="text" name="idade" id="idade" placeholder="Idade*"required>
+            
+            <label for="sexmas"></label>
 
-            <input class="genero" type="radio" name="sexo" id="sexmas" checked>Masculino
-            <input class="genero" type="radio" name="sexo" id="sexfem">Feminino
+            <p class="sexo"><input class="genero" type="radio" name="sexo" id="sexmas" checked>Masculino</p>
+
+            <label for="sexfem"></label>
+            <p class="sexo"><input class="genero" type="radio" name="sexo" id="sexfem">Feminino</p>
             
             <input class="form1" type="text" name="cpf" id="cpf" placeholder="CPF*"required> <br>
             <input class="form1" type="text" name="rg" id="rg" placeholder="RG*"required> <br>
