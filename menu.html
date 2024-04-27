@@ -21,29 +21,39 @@
             background-color: #6d4dc4;
             height: 100vh;
             box-shadow: 0px 0px 8px 2px black;
-            background-image: linear-gradient(to top, #1a0c42, #a38edd);
-            background-image: url('imagens/fundo.png');
-            background-position:  center;
-            background-size: cover;
+            background-image: linear-gradient(to top, #68539f, #a38edd);
+            /* background-image: url('imagens/fundo.png'); */
+            
+        }
+
+        .divprincipal {
+            position: relative;
+            bottom: 90px;
+            
         }
             
-        
+        .containerbaixo {
+            margin: 0px;
+            display: flex;
+            justify-items: center;
+            align-items: flex-end;
+        }
 
         .coracao {
-            
-            display: block;
-            width: 200px;
+            width: 100px;
             position: relative;
-            left: 80px;
-            padding-top: 50px;
+            left: 65px;
             bottom: 20px;
+            padding-top: 50px;
+            
         }
 
         .saude{
-            display: block;
-            width: 180px;
+            
+            width: 150px;
+            height: 80px;
             position: relative;
-            left: 85px; 
+            left: 65px; 
             bottom: 25px;
         }
 
@@ -91,6 +101,14 @@
             box-shadow: 2px 2px 5px  black;
 
         }
+
+        h1 {
+            text-shadow: 2px 2px 8px  black;
+            text-align: center;
+            
+            font-size: 50px;
+            color: white;
+        }
         
 
     </style>
@@ -98,13 +116,20 @@
 <body>
     
     <main>
-        <div>
+        <section class="containerbaixo">
+            <img class="coracao" src="imagens/coracao1.png" alt="">
+            <img class="saude" src="imagens/Untitled__8_-removebg-preview.png" alt="">
+        </section>
+
+        <h1>MENU</h1>
+
+
+        <div class="divprincipal">
             <a href="especi.html"><img class="esteto" src="imagens/estetoscopio.png" alt=""></a>
             <a href="hospital.html"><img class="hosp" src="imagens/hospital.png" alt=""></a>
             <a href="medicacoes.html"><img class="medic" src="imagens/medicamentos.png" alt=""></a>
             <a href="exercicios.html"><img class="peso" src="imagens/peso.png" alt=""></a>
         </div>
-       
     </main>
 </body>
 </html>
