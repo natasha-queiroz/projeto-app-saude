@@ -5,71 +5,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>principal</title>
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        body {
-            background-color: #85CB34;  
-            
+        /* ====================TELA PEQUENA==================== */
+
+        @media screen and (min-width: 375px) and (max-width: 768px) {
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body {
+                background-color: #85CB34;  
+                
+            }
+
+            main {
+                margin: auto;
+                max-width: 100vw;
+                background-image: linear-gradient(to top, #1a0c42, #a38edd);
+                height: 100vh;
+                box-shadow: 0px 0px 8px 2px black;
+            }
+
+            .coracao {
+                display: block;
+                width: 200px;
+                position: relative;
+                left: 90px;
+                padding-top: 50px;
+            }
+
+            .saude{
+                display: block;
+                width: 180px;
+                position: relative;
+                left: 90px; 
+            }
+
+            .login{
+                position: relative;
+                left: 100px;
+                width: 180px;
+                margin-top: 90px;
+                padding: 10px;
+                border-radius: 8px;
+                border-style: none;
+                box-shadow: 1px 2px 5px black;
+                font-weight: bolder;
+            }
+
+            .cadastrar{
+                position: relative;
+                left: 100px;
+                width: 180px;
+                margin-top: 20px;
+                padding: 10px;
+                border-radius: 8px;
+                border-style: none;
+                font-weight: bolder;
+                box-shadow: 1px 2px 5px black;
+            }
+
+            .esq{
+                background-color: #98df48;
+                position: relative;
+                left: 115px;
+                width: 150px;
+                margin-top: 20px;
+                border-style: none;
+                border-radius: 50px;
+                box-shadow: 1px 2px 5px black;
+                padding: 5px;
+            }
         }
 
-        main {
-            margin: auto;
-            max-width: 100vw;
-            background-image: linear-gradient(to top, #1a0c42, #a38edd);
-            height: 100vh;
-            box-shadow: 0px 0px 8px 2px black;
+        /* ====================TELA MEDIA==================== */
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body { 
+                background-image: linear-gradient(to top, #1a0c42, #a38edd);
+                margin: auto;
+                max-width: 100vw;
+                height: 100vh;
+            }
+
+            main {
+                position: absolute;
+                top: 40%;
+                left: 42.5%;
+                transform: translate(-50%, -50%);
+            }
+
+            .coracao {
+                display: block;
+                width: 250px;
+                position: relative;
+                top: 50px;
+                left: 110px;
+                
+            }
+
+            .saude{
+                display: block;
+                width: 200px;
+                position: relative;
+                top: 25px;
+                left: 120px;
+                 
+            }
+
+            .login{
+                position: relative;
+                top: 50px;
+                left: 95px;
+                width: 300px;
+                
+                border-radius: 8px;
+                border-style: none;
+                box-shadow: 1px 2px 5px black;
+                font-weight: bolder;
+                font-size: 20px;
+                padding: 15px;
+            }
+
+            .cadastrar{
+                position: relative;
+                top: 70px;
+                left: 95px;
+                width: 300px;
+                padding: 10px;
+                border-radius: 8px;
+                border-style: none;
+                font-weight: bolder;
+                font-size: 20px;
+                box-shadow: 1px 2px 5px black;
+                padding: 15px;
+            }
+
+            .esq{
+                background-color: #98df48;
+                position: relative;
+                top: 85px;
+                left: 170px;
+                width: 150px;
+                border-style: none;
+                border-radius: 50px;
+                box-shadow: 1px 2px 5px black;
+                padding: 10px;
+            }
         }
 
-        .coracao {
-            display: block;
-            width: 200px;
-            position: relative;
-            left: 90px;
-            padding-top: 50px;
-        }
+        /* ====================TELA GRANDE==================== */
 
-        .saude{
-            display: block;
-            width: 180px;
-            position: relative;
-            left: 90px; 
-        }
+        @media screen and (min-width: 992px) {
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body {
+                
+                background-image: linear-gradient(to top, #1a0c42, #a38edd);
+                margin: auto;
+                max-width: 100vw;
+                height: 100vh;
+                
+            }
 
-        .login{
-            position: relative;
-            left: 95px;
-            width: 180px;
-            margin-top: 90px;
-            padding: 10px;
-            border-radius: 8px;
-            border-style: none;
-            box-shadow: 1px 2px 5px black;
-            font-weight: bolder;
-        }
+            main {
+                position: absolute;
+                top: 40%;
+                left: 42.5%;
+                transform: translate(-50%, -50%);              
+                
+            }
 
-        .cadastrar{
-            position: relative;
-            left: 95px;
-            width: 180px;
-            margin-top: 20px;
-            padding: 10px;
-            border-radius: 8px;
-            border-style: none;
-            font-weight: bolder;
-            box-shadow: 1px 2px 5px black;
-        }
+            .coracao {
+                display: block;
+                width: 300px;
+                position: relative;
+                left: 90px;
+                padding-top: 50px;
 
-        .esq{
-            background-color: #98df48;
-            position: relative;
-            left: 110px;
-            width: 150px;
-            margin-top: 20px;
-            border-style: none;
-            border-radius: 50px;
-            box-shadow: 1px 2px 5px black;
+                
+            }
+
+            .saude{
+                display: block;
+                width: 250px;
+                position: relative;
+                left: 110px; 
+            }
+
+            .login{   /* botao */
+                position: relative;
+                left: 95px;
+                width: 300px;
+                margin-top: 90px;
+                padding: 10px;
+                border-radius: 8px;
+                border-style: none;
+                box-shadow: 1px 2px 5px black;
+                font-weight: bolder;
+                font-size: 20px;
+                padding: 15px;
+            }
+
+            .cadastrar{   /* botao */
+                position: relative;
+                left: 95px;
+                width: 300px;
+                margin-top: 20px;
+                padding: 10px;
+                border-radius: 8px;
+                border-style: none;
+                font-weight: bolder;
+                font-size: 20px;
+                box-shadow: 1px 2px 5px black;
+                padding: 15px;
+            }
+
+            .esq{   /* botao */
+                background-color: #98df48;
+                position: relative;
+                left: 170px;
+                width: 150px;
+                margin-top: 20px;
+                border-style: none;
+                border-radius: 50px;
+                box-shadow: 1px 2px 5px black;
+                padding: 10px;
+            }
         }
        
     </style>
