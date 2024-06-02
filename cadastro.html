@@ -81,30 +81,6 @@
             body {
                 background-image: linear-gradient(to top, #49a09d, #5f2c82);  
             }
-            
-            main {
-                margin: auto;
-                max-width: 100vw;
-                height: 100vh;
-                box-shadow: 0px 0px 8px 2px black;
-            }
-
-            .coracao {
-                display: block;
-                width: 200px;
-                position: relative;
-                left: 90px;
-                padding-top: 50px;
-                bottom: 20px;
-            }
-
-            .saude{
-                display: block;
-                width: 180px;
-                position: relative;
-                left: 90px; 
-                bottom: 25px;
-            }
 
             div {
                 position: relative;
@@ -174,7 +150,6 @@
             }
             
             div {
-                
                 display: inline-block;
                 position: relative;
                 left: 22em; 
@@ -298,25 +273,25 @@
         
         <form action="php-cadastro" method="post" autocomplete="on">
             <input class="form1" type="text" name="Nome" id="Nome" placeholder="Nome do completo*" required> <br>
-            <input class="form1" type="text" name="Nome" id="cpf" placeholder="CPF*" required> 
-            <input class="form1" type="text" name="telefone" id="rg" placeholder="RG*"required> <br>
-            <input class="form1" type="text" name="data de Nascimento" id="datanasc" placeholder="Data de Nascimento*"required> <br>
-            <input class="idade" type="text" name="idade" id="idade" placeholder="Idade*"required>
+            <input class="form1" type="text" name="cpf" id="cpf" placeholder="CPF*" required maxlength="11"> 
+            <input class="form1" type="text" name="telefone" id="rg" placeholder="RG*"required maxlength="11"> <br>
+            <input class="form1" type="date" name="data de Nascimento" id="datanasc" placeholder="Data de Nascimento*"required> <br>
+            <input class="idade" type="text" name="idade" id="idade" placeholder="Idade*"required maxlength="3">
             <label for="sexmas"></label>
             <input class="genero" type="radio" name="sexo" id="sexmas" checked>
             <label class="sexo" for="sexmas">Masculino</label>
             <input class="genero" type="radio" name="sexo" id="sexfem">
             <label class="sexo" for="sexfem">Feminino</label>  <br>
-            <input class="form1" type="text" name="" id="telefone" placeholder="Telefone*"required>
-            <input class="form1" type="text" name="" id="email" placeholder="Email"required> <br>
+            <input class="form1" type="tel" name="" id="telefone" placeholder="Telefone*"required>
+            <input class="form1" type="email" name="" id="email" placeholder="Email"required> <br>
             <input class="form1" type="text" name="endereco" id="endereco" placeholder="Endereço*"required> 
-            <input class="form1" type="text" name="numero" id="numero" placeholder="Numero*"required> <br>
+            <input class="form1" type="number" name="numero" id="numero" placeholder="Numero*"required> <br>
             <input class="form1" type="text" name="Complemento" id="complemento" placeholder="Complemento*"required>
             <input class="form1" type="text" name="bairro" id="bairro" placeholder="Bairro*"required><br>
             <input class="form1" type="text" name="cidade" id="cidade" placeholder="Cidade*" required> 
-            <input class="form1" type="text" name="estado" id="estado" placeholder="Estado*" required> <br>
-            <input class="form1" type="text" name="telefone" id="criesenha" placeholder="Crie uma senha*"required> 
-            <input class="form1" type="text" name="confirsenha" id="confirsenha" placeholder="Confirmar senha*"required>
+            <input class="form1" type="text" name="estado" id="estado" placeholder="Estado*" required > <br>
+            <input class="form1" type="password" name="telefone" id="criesenha" placeholder="Crie uma senha*"required> 
+            <input class="form1" type="password" name="confirsenha" id="confirsenha" placeholder="Confirmar senha*"required>
         </form>   
 
         <a href="telalogin.html"><input class="butao" type="button" value="cadastrar"></a>
