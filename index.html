@@ -90,6 +90,10 @@
                 height: 100vh;
             }
 
+            header {
+                border-right: 5px solid white;
+            } 
+
             main {
                 /* background-color: #5f2c82; */
                 box-shadow: 1px 2px 5px black;
@@ -106,26 +110,26 @@
 
             .coracao {
                 display: block;
-                width: 100px;
+                width: 130px;
                 position: relative;
-                right: 50px;
+                right: 70px;
             }
 
             .saude{
                 display: block;
-                width: 100px;
+                width: 130px;
                 position: relative;
-                right: 50px;
+                right: 70px;
             }
 
             .login{
                 position: relative;
-                left: 20px;
+                left: 50px;
                 bottom: 15px;
                 width: 200px;
                 border-radius: 8px;
                 border-style: none;
-                box-shadow: 1px 2px 5px black;
+                /* box-shadow: 1px 2px 5px black; */
                 font-weight: bolder;
                 font-size: 15px;
                 padding: 15px;
@@ -135,27 +139,30 @@
             .cadastrar{
                 position: relative;
                 top: 20px;
-                left: 20px;
+                left: 50px;
 
                 width: 200px;
                 border-radius: 8px;
                 border-style: none;
                 font-weight: bolder;
                 font-size: 15px;
-                box-shadow: 1px 2px 5px black;
                 padding: 15px;
                 cursor: pointer;
+            }
+            .cadastrar:active,.login:active {
+                border: 3px solid #cbc9cc;
+                width: 195px;
+                padding: 10px;
             }
 
             .esq{
                 background-color: #98df48;
                 position: relative;
                 top: 40px;
-                left: 70px;
+                left: 100px;
                 width: 100px;
                 border-style: none;
-                border-radius: 50px;
-                box-shadow: 1px 2px 5px black;
+                border-radius: 8px;
                 padding: 5px;
                 cursor: pointer;
                 font-size: 10px;
