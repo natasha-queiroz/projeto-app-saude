@@ -83,6 +83,16 @@
                 height: 120vh;
             }
 
+            main {
+                position: relative;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: 1px 2px 5px black;
+                width: 500px;
+                height: 400px;
+            }
+
             div {
                 position: relative;
                 top: 20px;
@@ -92,7 +102,7 @@
             .form1{
                 box-shadow: 1px 2px 5px black;
                 position: relative;
-                left: 190px;
+                left: 45px;
                 width: 400px;
                 margin:  4px;
                 padding: 5px;
@@ -154,7 +164,7 @@
             .idade{
                 box-shadow: 1px 2px 5px black;
                 position: relative;
-                left: 179px;
+                left: 35px;
                 margin:  4px;
                 padding: 5px;
                 width: 189px;
@@ -166,7 +176,7 @@
                 background-color: #49a09d;
                 position: relative;
                 top: 20px;
-                left: 300px;
+                left: 150px;
                 width: 200px;
                 height: 35px;
                 border-style: none;
@@ -185,22 +195,17 @@
             .genero {
                 position: relative;
                 bottom: 15px;
-                left: 183px;
+                left: 50px;
                 cursor: pointer;
-                border: 0px;
-                width: 20px;
-                height: 30px;
-                vertical-align: middle;
             }
 
             .sexo{
                 position: relative;
-                left: 183px;
-                bottom: 15px;
+                left: 50px;
+                bottom: 17px;
                 display: inline-block;
                 color: white;
                 cursor: pointer;
-                font-size: 18px;
             }
         }
 
@@ -334,33 +339,33 @@
 </head>
 <body>
         
-    <div> 
-        
-        <form action="php-cadastro" method="post" autocomplete="on">
-            <input class="form1" type="text" name="Nome" id="Nome" placeholder="Nome do completo*" required> <br>
-            <input class="form1" type="text" name="cpf" id="cpf" placeholder="CPF*" required maxlength="11"> 
-            <input class="form1" type="text" name="telefone" id="rg" placeholder="RG*"required maxlength="11"> <br>
-            <input class="form1" type="date" name="data de Nascimento" id="datanasc" placeholder="Data de Nascimento*"required> <br>
-            <input class="idade" type="text" name="idade" id="idade" placeholder="Idade*"required maxlength="3">
-            <label for="sexmas"></label>
-            <input class="genero" type="radio" name="sexo" id="sexmas" checked>
-            <label class="sexo" for="sexmas">Masculino</label>
-            <input class="genero" type="radio" name="sexo" id="sexfem">
-            <label class="sexo" for="sexfem">Feminino</label>  <br>
-            <input class="form1" type="tel" name="" id="telefone" placeholder="Telefone*"required>
-            <input class="form1" type="email" name="" id="email" placeholder="Email"required> <br>
-            <input class="form1" type="text" name="endereco" id="endereco" placeholder="Endereço*"required> 
-            <input class="form1" type="number" name="numero" id="numero" placeholder="Numero*"required> <br>
-            <input class="form1" type="text" name="Complemento" id="complemento" placeholder="Complemento*"required>
-            <input class="form1" type="text" name="bairro" id="bairro" placeholder="Bairro*"required><br>
-            <input class="form1" type="text" name="cidade" id="cidade" placeholder="Cidade*" required> 
-            <input class="form1" type="text" name="estado" id="estado" placeholder="Estado*" required > <br>
-            <input class="form1" type="password" name="telefone" id="criesenha" placeholder="Crie uma senha*"required> 
-            <input class="form1" type="password" name="confirsenha" id="confirsenha" placeholder="Confirmar senha*"required>
-        </form>   
-
-        <a href="telalogin.html"><input class="butao" type="button" value="cadastrar"></a>
-    </div>
+    <main>
+        <div>
+            <form action="php-cadastro" method="post" autocomplete="on">
+                <input class="form1" type="text" name="Nome" id="Nome" placeholder="Nome do completo*" required> <br>
+                <input class="form1" type="text" name="cpf" id="cpf" placeholder="CPF*" required maxlength="11">
+                <input class="form1" type="text" name="telefone" id="rg" placeholder="RG*"required maxlength="11"> <br>
+                <input class="form1" type="date" name="data de Nascimento" id="datanasc" placeholder="Data de Nascimento*"required> <br>
+                <input class="idade" type="text" name="idade" id="idade" placeholder="Idade*"required maxlength="3">
+                <label for="sexmas"></label>
+                <input class="genero" type="radio" name="sexo" id="sexmas" checked>
+                <label class="sexo" for="sexmas">Masculino</label>
+                <input class="genero" type="radio" name="sexo" id="sexfem">
+                <label class="sexo" for="sexfem">Feminino</label>  <br>
+                <input class="form1" type="tel" name="" id="telefone" placeholder="Telefone*"required>
+                <input class="form1" type="email" name="" id="email" placeholder="Email"required> <br>
+                <input class="form1" type="text" name="endereco" id="endereco" placeholder="Endereço*"required>
+                <input class="form1" type="number" name="numero" id="numero" placeholder="Numero*"required> <br>
+                <input class="form1" type="text" name="Complemento" id="complemento" placeholder="Complemento*"required>
+                <input class="form1" type="text" name="bairro" id="bairro" placeholder="Bairro*"required><br>
+                <input class="form1" type="text" name="cidade" id="cidade" placeholder="Cidade*" required>
+                <input class="form1" type="text" name="estado" id="estado" placeholder="Estado*" required > <br>
+                <input class="form1" type="password" name="telefone" id="criesenha" placeholder="Crie uma senha*"required>
+                <input class="form1" type="password" name="confirsenha" id="confirsenha" placeholder="Confirmar senha*"required>
+            </form>
+            <a href="telalogin.html"><input class="butao" type="button" value="cadastrar"></a>
+        </div>
+    </main>
        
     
 </body>
