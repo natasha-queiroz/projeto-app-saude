@@ -18,6 +18,13 @@
                 margin: 0px;
             }
 
+            main {
+                position: relative;
+                top: 100px;
+                box-shadow: 1px 2px 5px black;
+                height: 430px;
+            }
+
             div{
                 position: relative;
                 top: 50px;
@@ -25,19 +32,76 @@
             .form1{
                 box-shadow: 1px 2px 5px black;
                 position: relative;
-                width: 350px;
-                margin:  4px;
+                width: 325px;
+                margin:  3px;
                 padding: 5px;
                 border-radius: 8px;
                 margin-left: 15px;
                 border-style: none;
             }
+
+            #cpf{
+                width: 153px;
+            }
+
+            #rg{
+                width: 153px;
+                margin-left: 0px;
+            }
+
+            #datanasc{
+                width: 153px;
+            }
+
+            #telefone{
+                width: 153px;
+            }
+
+            #email{
+                width: 153px;
+                margin-left: 0px;
+            }
+            #numero{
+                width: 80px;
+                margin-left: 0px;
+            }
+
+            #endereco{
+                width: 225px;
+            }
+            #bairro{
+                width: 80px;
+                margin-left: 0px;
+            }
+
+            #complemento{
+                width: 225px;
+            }
+            #cidade{
+                width: 153px;
+            }
+
+            #estado{
+                width: 153px;
+                margin-left: 0px;
+            }
+
+            #criesenha{
+                width: 153px;
+            }
+
+            #confirsenha{
+                width: 153px;
+                margin-left: 0px;
+            }
+
+
             .idade{
                 box-shadow: 1px 2px 5px black;
                 position: relative;
                 margin:  4px;
                 padding: 5px;
-                width: 130px;
+                width: 153px;
                 border-radius: 8px;
                 margin-left: 15px;
                 border-style: none;
@@ -45,14 +109,16 @@
             .butao{
                 background-color: #98df48;
                 position: relative;
-                left: 130px;
-                width: 100px;
+                left: 110px;
+                width: 150px;
                 height: 35px;
                 margin-top: 20px;
                 border-style: none;
                 border-radius: 50px;
                 box-shadow: 1px 2px 5px black;
                 cursor: pointer;
+                font-size: 18px;
+                font-weight: bolder;
             }
 
             .butao:active{
@@ -60,12 +126,28 @@
             }
 
             .genero {
-                margin-left: 8px;
+                position: relative;
                 cursor: pointer;
+                border: 0px;
+                width: 20px;
+                height: 35px;
+                vertical-align: middle;
+            }
+
+            #sexmas,#masculino {
+                position: relative;
+                left: 30px;
+                bottom: 28px;
+
+            }
+            #sexfem,#feminino {
+                position: relative;
+                right: 70px;
             }
 
             .sexo{
-                display: inline-block;
+                font-size: 17px;
+                position: relative;
                 color: white;
                 cursor: pointer;
             }
@@ -349,9 +431,9 @@
                 <input class="idade" type="text" name="idade" id="idade" placeholder="Idade*"required maxlength="3">
                 <label for="sexmas"></label>
                 <input class="genero" type="radio" name="sexo" id="sexmas" checked>
-                <label class="sexo" for="sexmas">Masculino</label>
+                <label class="sexo" for="sexmas" id="masculino">Masculino</label>
                 <input class="genero" type="radio" name="sexo" id="sexfem">
-                <label class="sexo" for="sexfem">Feminino</label>  <br>
+                <label class="sexo" for="sexfem" id="feminino">Feminino</label>  <br>
                 <input class="form1" type="tel" name="" id="telefone" placeholder="Telefone*"required>
                 <input class="form1" type="email" name="" id="email" placeholder="Email"required> <br>
                 <input class="form1" type="text" name="endereco" id="endereco" placeholder="Endereço*"required>
