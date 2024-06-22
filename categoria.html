@@ -14,26 +14,33 @@
             }
             body {
                 background-image: linear-gradient(to top, #49a09d, #5f2c82);
-                height: 100vh;
+                height: 130%;
             }
 
+            main {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                /* position: relative;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%); */
+            }
             /*========== pesquisa ========= */
             .group {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 position: relative;
-                top: 20px;
-                /* bottom: 20px; */
                 margin: auto;
             }
 
             .input {
-                width: 80%;
+                width: 90%;
                 height: 50px;
                 padding-left: 3.5rem;
                 border: 2px solid transparent;
-                border-radius: 50px;
+                border-radius: 10px;
                 background-color: #f3f3f4;
                 color: #0d0c22;
                 transition: 0.3s ease;
@@ -53,6 +60,174 @@
 
             .icon {
                 position: absolute;
+                left: 2.3rem;
+                fill: #9e9ea7;
+                width: 2rem;
+                height: 2rem;
+            }
+            /*========== pesquisa ========= */
+
+            section {
+                background-color: #131386;
+                border-radius: 50px;
+                margin: 25px 10px;
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+            }
+
+            img {
+                display: block;
+                width: 70px;
+                margin: auto;
+                margin-top: 15px;
+            }
+
+            h2{
+                font-size: 15px;
+                text-align: center;
+                margin-top: 20px;
+                color: white;
+            }
+            
+        }
+
+        /* ====================TELA MEDIA==================== */
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body {
+                background-image: linear-gradient(to top, #49a09d, #5f2c82);
+                /* height: 200%; */
+            }
+
+            main {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+            }
+            /*========== pesquisa ========= */
+            .group {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                margin: auto;
+            }
+
+            .input {
+                width: 80%;
+                height: 50px;
+                padding-left: 3.5rem;
+                border: 2px solid transparent;
+                border-radius: 10px;
+                background-color: #f3f3f4;
+                color: #0d0c22;
+                transition: 0.3s ease;
+                font-size: 20px;
+            }
+
+            .input::placeholder {
+                color: #9e9ea7;
+            }
+
+            .input:focus,input:hover {
+                outline: none;
+                border-color: #00304966;
+                background-color: #fff;
+                box-shadow: 0 0 0 4px #0030491a;
+            }
+
+            .icon {
+                position: absolute;
+                left: 5.5rem;
+                fill: #9e9ea7;
+                width: 2rem;
+                height: 2rem;
+            }
+            /*========== pesquisa ========= */
+
+            section {
+                background-color: #131386;
+                border-radius: 100px;
+                margin: 25px 10px;
+                display: inline-block;
+                width: 160px;
+                height: 160px;
+            }
+
+            img {
+                display: block;
+                width: 120px;
+                margin: auto;
+                margin-top: 15px;
+            }
+
+            h2{
+                font-size: 25px;
+                text-align: center;
+                margin-top: 30px;
+                color: white;
+            }
+        }
+
+        /* ====================CAPA TELA GRANDE==================== */
+
+        @media screen and (min-width: 992px) {
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body {
+                background-image: linear-gradient(to top, #49a09d, #5f2c82);
+                height: 100%;
+            }
+
+            main {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 800px;
+                margin: auto;
+                margin-bottom: 10%;
+            }
+            /*========== pesquisa ========= */
+            .group {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+            }
+
+            .input {
+                width: 80%;
+                height: 50px;
+                padding-left: 3.5rem;
+                border: 2px solid transparent;
+                border-radius: 10px;
+                background-color: #f3f3f4;
+                color: #0d0c22;
+                transition: 0.3s ease;
+                font-size: 20px;
+            }
+
+            .input::placeholder {
+                color: #9e9ea7;
+            }
+
+            .input:focus,input:hover {
+                outline: none;
+                border-color: #00304966;
+                background-color: #fff;
+                box-shadow: 0 0 0 4px #0030491a;
+            }
+
+            .icon {
+                position: relative;
                 left: 3.3rem;
                 fill: #9e9ea7;
                 width: 2rem;
@@ -61,44 +236,33 @@
             /*========== pesquisa ========= */
 
             section {
-                background-color: blue;
-                border-radius: 200px;
-                margin: 10px;
+                background-color: #131386;
+                border-radius: 50px;
+                margin: 25px 10px;
                 display: inline-block;
                 width: 100px;
                 height: 100px;
-                position: relative;
-                top: 40px;
             }
 
             img {
                 display: block;
                 width: 70px;
                 margin: auto;
-                margin-top: 20px;
-            }
-
-            h1 {
-                margin: 20px;
-                color: white;
-                text-align: center;
-                position: relative;
-                top: 20px;
+                margin-top: 15px;
             }
 
             h2{
-                font-size: 18px;
-                /* text-align: center; */
-                margin-top: 20px;
-                color: wheat;
+                font-size: 15px;
+                text-align: center;
+                margin-top: 30px;
+                color: white;
             }
-            
         }
 
     </style>
 </head>
 <body>
-    <main>
+    <header>
         <article class="group">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
               <g>
@@ -110,10 +274,11 @@
             <input class="input" type="search" placeholder="Pesquisar" />
         </article>
 
-        <h1>Categorias</h1>
+    </header>
+    <main>
 
         <section>
-            <a href="especi.html"><img src="imagens/img-categoria/cardiologista.png" alt=""></a>
+            <a href="especi.html "><img src="imagens/img-categoria/cardiologista.png" alt=""></a>
             <h2>Clinico geral</h2>
         </section>
 
@@ -148,7 +313,7 @@
         </section>
 
         <section>
-            <img src="imagens/img-categoria/oftalmologia.png" alt="">
+            <img src="imagens/img-categoria/oftalmologista.png" alt="">
             <h2>Clinico geral</h2>
         </section>
 
@@ -167,6 +332,71 @@
             <h2>Clinico geral</h2>
         </section>
 
+<!-- ============================================================= -->
+        <section>
+            <img src="imagens/img-categoria/psicologo.png" alt="">
+            <h2>Clinico geral</h2>
+        </section>
+        
+        <section>
+            <img src="imagens/img-categoria/psicologo.png" alt="">
+            <h2>Clinico geral</h2>
+        </section>
+
+        <section>
+            <img src="imagens/img-categoria/psicologo.png" alt="">
+            <h2>Clinico geral</h2>
+        </section>
+
+        <section>
+            <img src="imagens/img-categoria/psicologo.png" alt="">
+            <h2>Clinico geral</h2>
+        </section>
+
+        <section>
+            <img src="imagens/img-categoria/psicologo.png" alt="">
+            <h2>Clinico geral</h2>
+        </section>
+
+        <section>
+            <img src="imagens/img-categoria/psicologo.png" alt="">
+            <h2>Clinico geral</h2>
+        </section>
+
+        <section>
+            <img src="imagens/img-categoria/psicologo.png" alt="">
+            <h2>Clinico geral</h2>
+        </section>
+
+        <section>
+            <img src="imagens/img-categoria/psicologo.png" alt="">
+            <h2>Clinico geral</h2>
+        </section>
+
+        <section>
+            <img src="imagens/img-categoria/psicologo.png" alt="">
+            <h2>Clinico geral</h2>
+        </section>
+
+        <section>
+            <img src="imagens/img-categoria/psicologo.png" alt="">
+            <h2>Clinico geral</h2>
+        </section>
+
+        <section>
+            <img src="imagens/img-categoria/psicologo.png" alt="">
+            <h2>Clinico geral</h2>
+        </section>
+
+        <section>
+            <img src="imagens/img-categoria/psicologo.png" alt="">
+            <h2>Clinico geral</h2>
+        </section>
+
+        <section>
+            <img src="imagens/img-categoria/psicologo.png" alt="">
+            <h2>Clinico geral</h2>
+        </section>
     </main>
 </body>
 </html>
