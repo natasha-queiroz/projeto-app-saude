@@ -24,17 +24,13 @@
                 transform: translate(-50%, -50%);
             }
 
-            div{
-                position: relative;
-                top: 50px;
-            }
             .form1{
                 box-shadow: 1px 1px 2px #373737;
                 position: relative;
                 width: 325px;
                 margin:  3px;
                 padding: 5px;
-                border-radius: 8px;
+                border-radius: 5px;
                 margin-left: 15px;
                 border-style: none;
             }
@@ -101,7 +97,7 @@
                 margin:  4px;
                 padding: 5px;
                 width: 153px;
-                border-radius: 8px;
+                border-radius: 5px;
                 margin-left: 15px;
                 border-style: none;
             }
@@ -132,7 +128,7 @@
                 position: relative;
                 bottom: 15px;
                 padding: 5px;
-                border-radius: 8px;
+                border-radius: 5px;
                 border-style: none;
             }
         }
@@ -146,25 +142,19 @@
             }
             body {
                 background-image: linear-gradient(to top, #49a09d, #5f2c82);  
-                height: 120vh;
+                height: 100vh;
             }
 
             main {
                 position: relative;
-                top: 48%;
+                top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                box-shadow: 1px 2px 5px black;
                 width: 500px;
-                height: 400px;
+                height: 370px;
+                padding: 20px;
             }
 
-            div {
-                position: relative;
-                top: 20px;
-                display: inline-block;
-                
-            }
             .form1{
                 box-shadow: 1px 2px 5px black;
                 position: relative;
@@ -172,7 +162,7 @@
                 width: 400px;
                 margin:  4px;
                 padding: 5px;
-                border-radius: 8px;
+                border-radius: 5px;
                 border-style: none;
             }
 
@@ -232,14 +222,14 @@
                 margin:  4px;
                 padding: 5px;
                 width: 189px;
-                border-radius: 8px;
+                border-radius: 5px;
                 margin-left: 15px;
                 border-style: none;
             }
             .butao{
                 background-color: #49a09d;
                 position: relative;
-                top: 20px;
+                top: 10px;
                 left: 150px;
                 width: 200px;
                 height: 35px;
@@ -271,6 +261,18 @@
                 color: white;
                 cursor: pointer;
             }
+
+            select{
+                box-shadow: 1px 1px 2px #373737;
+                font-size: 15px;
+                width: 189px;
+                position: relative;
+                bottom: 15px;
+                left: 38px;
+                padding: 5px;
+                border-radius: 5px;
+                border-style: none;
+            }
         }
 
         /* ====================TELA GRANDE==================== */
@@ -280,14 +282,15 @@
             body {
                 background-image: linear-gradient(to top, #49a09d, #5f2c82);
                 height: 100vh;
-                margin: 0px;
             }
             
-            div {
+            main {
                 display: inline-block;
                 position: relative;
-                left: 22em; 
-                top: 60px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                
            }
 
             .form1{
@@ -295,18 +298,17 @@
                 width: 800px;
                 margin-top: 20px;
                 padding: 10px;
-                border-radius: 50px;
+                border-radius: 5px;
                 border-style: none;
                 font-size: 20px;
-                position: relative;
+
             }
             .idade{
                 box-shadow: 1px 2px 5px black;
-                position: relative;
-                top: 5px;
+                margin-top: 20px;
                 padding: 10px;
-                width: 300px;
-                border-radius: 50px;
+                width: 388px;
+                border-radius: 5px;
                 border-style: none;
                 font-size: 20px;
             }
@@ -319,7 +321,7 @@
             }
 
             #datanasc{
-                width: 300px;
+                width: 388px;
             }
 
             #telefone{
@@ -377,9 +379,16 @@
                 background-color: #49a09d;
             }
 
-            select {    /* texto */
+            select{
+                box-shadow: 1px 1px 2px #373737;
+                font-size: 15px;
                 width: 388px;
-                background-color: aqua;
+                position: relative;
+                bottom: 35px;
+                left: 19px;
+                padding: 15px;
+                border-radius: 8px;
+                border-style: none;
             }
         }
     </style>
@@ -398,7 +407,7 @@
                 <option>Sexo</option>
                 <option>Masculino</option>
                 <option>Feminino</option>
-            </select>
+            </select><br>
             <input class="form1" type="tel" name="" id="telefone" placeholder="Telefone*"required>
             <input class="form1" type="email" name="" id="email" placeholder="Email"required> <br>
             <input class="form1" type="text" name="endereco" id="endereco" placeholder="Endereço*"required>
