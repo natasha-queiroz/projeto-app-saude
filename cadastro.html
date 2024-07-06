@@ -7,7 +7,7 @@
     <style>
         /* ====================TELA PEQUENA==================== */
 
-        @media screen and (min-width: 375px) and (max-width: 768px) {
+        @media screen and (min-width: 360px) and (max-width: 768px) {
             *{
                 margin: 0px;
                 padding: 0px;
@@ -141,96 +141,103 @@
                 padding: 0px;
             }
             body {
-                background-image: linear-gradient(to top, #49a09d, #5f2c82);  
+                background-image: linear-gradient(to top, #49a09d, #5f2c82);
+                background-attachment: fixed; 
                 height: 100vh;
             }
 
             main {
-                position: relative;
-                top: 50%;
+                position: absolute;
+                top: 60%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                width: 500px;
-                height: 370px;
-                padding: 20px;
+                /* padding: 20px; */
             }
 
             .form1{
                 box-shadow: 1px 2px 5px black;
-                position: relative;
-                left: 45px;
                 width: 400px;
                 margin:  4px;
-                padding: 5px;
+                padding: 8px;
                 border-radius: 5px;
                 border-style: none;
+                
+            }
+            form {
+                background-color: #ffffff2c;
+                padding: 20px 20px 0px 20px;
+                /* width: 500px;
+                height: 390px; */
+                border-radius: 20px;
+                
             }
 
             #cpf{
-                width: 189px;
+                width: 183px;
             }
 
             #rg{
-                width: 189px;
+                width: 183px;
             }
 
             #datanasc{
-                width: 189px;
+                width: 183px;
             }
 
             #telefone{
-                width: 189px;
+                width: 183px;
             }
 
             #email{
-                width: 189px;
+                width: 183px;
+                
             }
             #numero{
-                width: 100px;
+                width: 89px;
             }
 
             #endereco{
                 width: 277px;
             }
             #bairro{
-                width: 100px;
+                width: 89px;
             }
 
             #complemento{
                 width: 277px;
             }
             #cidade{
-                width: 189px;
+                width: 183px;
             }
 
             #estado{
-                width: 189px;
+                width: 183px;
             }
 
             #criesenha{
-                width: 189px;
+                width: 183px;
             }
 
             #confirsenha{
-                width: 189px;
+                width: 183px;
             }
 
             .idade{
                 box-shadow: 1px 2px 5px black;
                 position: relative;
-                left: 35px;
-                margin:  4px;
+                right: 10px;
                 padding: 5px;
                 width: 189px;
                 border-radius: 5px;
-                margin-left: 15px;
                 border-style: none;
+            }
+
+            .containerbutao{
+                display: flex;
+                padding: 20px;
             }
             .butao{
                 background-color: #49a09d;
-                position: relative;
-                top: 10px;
-                left: 150px;
                 width: 200px;
                 height: 35px;
                 border-style: none;
@@ -268,7 +275,7 @@
                 width: 189px;
                 position: relative;
                 bottom: 15px;
-                left: 38px;
+                right: 3px;
                 padding: 5px;
                 border-radius: 5px;
                 border-style: none;
@@ -281,22 +288,28 @@
             
             body {
                 background-image: linear-gradient(to top, #49a09d, #5f2c82);
+                background-attachment: fixed;
                 height: 100vh;
+                margin: 0px;
+                
             }
             
             main {
-                display: inline-block;
-                position: relative;
+                position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                
-           }
+            }
 
+            form {
+                background-color: #ffffff2c;
+                padding: 50px 50px 0px 50px;
+                border-radius: 20px;
+            }
             .form1{
                 box-shadow: 1px 2px 5px black;
                 width: 800px;
-                margin-top: 20px;
+                margin-top: 8px;
                 padding: 10px;
                 border-radius: 5px;
                 border-style: none;
@@ -305,7 +318,7 @@
             }
             .idade{
                 box-shadow: 1px 2px 5px black;
-                margin-top: 20px;
+                margin-top: 8px;
                 padding: 10px;
                 width: 388px;
                 border-radius: 5px;
@@ -339,7 +352,7 @@
                 width: 675px;
             }
             #bairro{
-                width: 200px;
+                width: 197px;
             }
 
             #complemento{
@@ -361,11 +374,13 @@
                 width: 388px;
             }
 
+            .containerbutao{
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+            }
             .butao{
                 background-color: #49a09d;
-                position: relative;
-                top: 20px;
-                left: 300px;
                 width: 150px;
                 height: 45px;
                 border-style: none;
@@ -385,8 +400,8 @@
                 width: 388px;
                 position: relative;
                 bottom: 35px;
-                left: 19px;
-                padding: 15px;
+                left: 15px;
+                padding: 10px;
                 border-radius: 8px;
                 border-style: none;
             }
@@ -418,8 +433,12 @@
             <input class="form1" type="text" name="estado" id="estado" placeholder="Estado*" required > <br>
             <input class="form1" type="password" name="telefone" id="criesenha" placeholder="Crie uma senha*"required>
             <input class="form1" type="password" name="confirsenha" id="confirsenha" placeholder="Confirmar senha*"required>
+
+            <div class="containerbutao">
+                <a href="index.html"><input class="butao" type="button" value="Cadastrar"></a>
+            </div>
         </form>
-        <a href="index.html"><input class="butao" type="button" value="Cadastrar"></a>
+        
         
     </main>
        
