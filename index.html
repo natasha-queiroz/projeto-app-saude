@@ -175,6 +175,11 @@
                 width: 100%;
             }
 
+            nav {
+
+                text-align: center;
+            }
+
             .btn_criar_conta {
                 display: flex;
                 justify-content: end;
@@ -197,8 +202,8 @@
                 padding: 15px;
                 margin: 0px;
                 font-size: 30px;
-                display: inline-flex;
-                /* flex-direction: column-reverse; */
+                position: relative;
+                bottom: 60px;
             }
 
             article {
@@ -513,9 +518,11 @@
 </head>
 <body>
     <header>
-         <div class="btn_criar_conta"><a href="cadastro.html"><button>Criar Conta</button></a></div><h1>Seja Bem-Vindo</h1>
+         <div class="btn_criar_conta"><a href="cadastro.html"><button>Criar Conta</button></a></div>
     </header>
-    
+    <nav>
+        <h1>Seja Bem-Vindo</h1>
+    </nav>
     <main>
         <article>
             <img class="coracao" src="imagens/coracao1.png" alt="">
