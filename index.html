@@ -165,17 +165,18 @@
                 background-image: linear-gradient(to top, #49a09d, #5f2c82);
                 background-attachment: fixed;
                 height: 100vh;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
             }
 
             header {
-                text-align: center;
-
+                width: 100%;
             }
 
             .btn_criar_conta {
                 display: flex;
                 justify-content: end;
-
             }
 
             header button {
@@ -193,7 +194,7 @@
                 color: white;
                 text-align: center;
                 padding: 15px;
-                padding-bottom: 0px;
+                margin: 0px;
                 font-size: 30px;
             }
 
@@ -205,10 +206,6 @@
             }
             
             main {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
                 background-color: #ffffff2c;
                 display: flex;
                 justify-content: center;
@@ -216,6 +213,7 @@
                 border-radius: 20px;
                 width: 700px;
                 height: 350px;
+                margin-bottom: 20px;
             }
 
             .coracao {
@@ -509,11 +507,12 @@
 </head>
 <body>
     <header>
-       <div class="btn_criar_conta"><a href="cadastro.html"><button>Criar Conta</button></a></div><h1>Seja Bem-Vindo</h1> 
+         <div class="btn_criar_conta"><a href="cadastro.html"><button>Criar Conta</button></a></div>
     </header>
-
     
-    
+    <nav>
+        <h1>Seja Bem-Vindo</h1>
+    </nav>
     <main>
         <article>
             <img class="coracao" src="imagens/coracao1.png" alt="">
