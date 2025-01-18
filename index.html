@@ -356,34 +356,12 @@
                 height: 100vh;
             }
 
-            header {
-                text-align: center;
-
-            }
-
-            .btn_criar_conta {
-                display: flex;
-                justify-content: end;
-
-            }
-
-            header button {
-                background-color: transparent;
-                font-weight: bolder;
-                font-size: 15px;
-                padding: 15px;
-                margin: 10px;
-                border-radius: 10px;
-                border-style: none;
-                box-shadow: 0.5px 0.5px 2px black;
-            }
-
             h1 {
                 color: white;
                 text-align: center;
                 padding: 15px;
                 padding-bottom: 0px;
-                font-size: 30px;
+                font-size: 50px;
             }
 
             article {
@@ -450,7 +428,6 @@
                 padding: 11px;
                 border-top-left-radius: 5px;
                 border-bottom-left-radius: 5px;
-
             }
 
             #chave {
@@ -459,14 +436,6 @@
                 margin-top: 15px;
                 border-top-left-radius: 5px;
                 border-bottom-left-radius: 5px;
-
-            }
-
-            .cont-but {
-                display: flex;
-                justify-content: center;
-                position: relative;
-                top: 30px;
             }
 
             .esq{
@@ -474,14 +443,32 @@
             }
             .esq:hover {
                 color: #d96666;
-                
+            }
+
+            .cont-but {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 10px;
+            }
+            .btn_criar_conta {
+                background-color: #2b686668;
+                color: white;
+                padding: 15px;
+                border-style: none;
+                border-radius: 5px;
+                box-shadow: 0.5px 0.5px 1px black;
+                font-weight: bolder;
+                text-align: center;
+                font-size: 15px;
+                cursor: pointer;
             }
 
             .butentrar {
-                background-color: transparent;
+                background-color: cadetblue;
                 color: white;
-                width: 130px;
-                height: 40px;
+                padding: 15px;
                 border-style: none;
                 border-radius: 5px;
                 box-shadow: 0.5px 0.5px 1px black;
@@ -503,7 +490,6 @@
             span {
                 display: flex;
                 align-items: center;
-
             }
 
             span p {
@@ -523,17 +509,12 @@
     </style>
 </head>
 <body>
-    <header>
-         <div class="btn_criar_conta"><a href="cadastro.html"><button>Criar Conta</button></a></div>
-    </header>
+
     <nav>
         <h1>Seja Bem-Vindo</h1>
     </nav>
     <main>
         <article>
-            <!-- <img class="coracao" src="imagens/coracao1.png" alt="">
-            <img class="saude" src="imagens/Untitled__8_-removebg-preview.png" alt=""> -->
-
             <img class="saude" src="imagens/logonova..png" alt="">
         </article>
 
@@ -558,11 +539,22 @@
             </div>
             
             <div class="cont-but">
-                <a href="menu.html"><input class="butentrar" type="button" value="Entrar"></a>
+                <button onclick="entrar()" class="butentrar">Entrar</button>
+                <button onclick="criar_conta()" class="btn_criar_conta">Criar Conta</button>
             </div>
         </section>
                 
     </main>
+
+    <script>
+        function entrar() {
+            window.location.href = 'menu.html'
+        }
+
+        function criar_conta() {
+            window.location.href = 'cadastro.html'
+        }
+    </script>
 
 </body>
 </html>

@@ -298,10 +298,15 @@
                 margin: 0px;
                 
             }
+            h1 {
+                text-align: center;
+                font-size: 50px;
+                color: white;
+            }
             
             main {
                 position: absolute;
-                top: 50%;
+                top: 70%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
@@ -312,7 +317,6 @@
                 border-radius: 20px;
             }
             .form1{
-                box-shadow: 1px 2px 5px black;
                 width: 800px;
                 margin-top: 8px;
                 padding: 10px;
@@ -321,76 +325,34 @@
                 font-size: 20px;
 
             }
-            .idade{
-                box-shadow: 1px 2px 5px black;
+            #idade{
                 margin-top: 8px;
                 padding: 10px;
-                width: 388px;
+                width: 257px;
                 border-radius: 5px;
                 border-style: none;
                 font-size: 20px;
             }
-            #cpf{
-                width: 388px;
-            }
-
-            #rg{
-                width: 388px;
-            }
 
             #datanasc{
-                width: 388px;
-            }
-
-            #telefone{
-                width: 388px;
-            }
-
-            #email{
-                width: 388px;
-            }
-            #numero{
-                width: 100px;
-            }
-
-            #endereco{
-                width: 675px;
-            }
-            #bairro{
-                width: 197px;
-            }
-
-            #complemento{
-                width: 578px;
-            }
-            #cidade{
-                width: 388px;
-            }
-
-            #estado{
-                width: 388px;
-            }
-
-            #criesenha{
-                width: 388px;
-            }
-
-            #confirsenha{
-                width: 388px;
+                width: 257px;
             }
 
             .containerbutao{
                 display: flex;
                 justify-content: center;
+                margin: 20px;
                 padding: 20px;
             }
             .butao{
-                background-color: #49a09d;
-                width: 150px;
+                background-color: #377774;
+                color: white;
+                width: 200px;
                 height: 45px;
                 border-style: none;
-                border-radius: 50px;
-                box-shadow: 1px 2px 5px black;
+                border-radius: 10px;
+                box-shadow: 0px 0px 0.5px black;
+                font-size: 20px;
                 cursor: pointer;
             }
 
@@ -400,15 +362,12 @@
             }
 
             select{
-                box-shadow: 1px 1px 2px #373737;
-                font-size: 15px;
-                width: 388px;
-                position: relative;
-                bottom: 35px;
-                left: 15px;
+                margin-top: 8px;
                 padding: 10px;
-                border-radius: 8px;
+                width: 257px;
+                border-radius: 5px;
                 border-style: none;
+                font-size: 20px;
             }
         }
     </style>
@@ -416,26 +375,27 @@
 <body>
         
     <main>
-        
+        <h1>Cadastro</h1>
         <form action="php-cadastro" method="post" autocomplete="on">
-            <input class="form1" type="text" name="Nome" id="Nome" placeholder="Nome do completo*" required> <br>
+            <input class="form1" type="text" name="Nome" id="Nome" placeholder="Nome do completo*" required> 
             <input class="form1" type="text" name="cpf" id="cpf" placeholder="CPF*" required maxlength="11">
-            <input class="form1" type="text" name="telefone" id="rg" placeholder="RG*"required maxlength="11"> <br>
-            <input class="form1" type="date" name="data de Nascimento" id="datanasc" placeholder="Data de Nascimento*"required> <br>
-            <input class="idade" type="text" name="idade" id="idade" placeholder="Idade*"required maxlength="3">
-            <select>
-                <option>Sexo</option>
-                <option>Masculino</option>
-                <option>Feminino</option>
-            </select><br>
+            <input class="form1" type="text" name="telefone" id="rg" placeholder="RG*"required maxlength="11"> 
+            <input class="form1" type="date" name="data de Nascimento" id="datanasc" placeholder="Data de Nascimento*"required>
+            <input class="form1" type="text" name="idade" id="idade" placeholder="Idade*"required maxlength="3">
+            <select >
+                <option>Genero</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outros">Outros</option>
+            </select>
             <input class="form1" type="tel" name="" id="telefone" placeholder="Telefone*"required>
-            <input class="form1" type="email" name="" id="email" placeholder="Email"required> <br>
+            <input class="form1" type="email" name="" id="email" placeholder="Email"required> 
             <input class="form1" type="text" name="endereco" id="endereco" placeholder="Endereço*"required>
-            <input class="form1" type="number" name="numero" id="numero" placeholder="Numero*"required> <br>
+            <input class="form1" type="number" name="numero" id="numero" placeholder="Numero*"required> 
             <input class="form1" type="text" name="Complemento" id="complemento" placeholder="Complemento*"required>
-            <input class="form1" type="text" name="bairro" id="bairro" placeholder="Bairro*"required><br>
+            <input class="form1" type="text" name="bairro" id="bairro" placeholder="Bairro*"required>
             <input class="form1" type="text" name="cidade" id="cidade" placeholder="Cidade*" required>
-            <input class="form1" type="text" name="estado" id="estado" placeholder="Estado*" required > <br>
+            <input class="form1" type="text" name="estado" id="estado" placeholder="Estado*" required > 
             <input class="form1" type="password" name="telefone" id="criesenha" placeholder="Crie uma senha*"required>
             <input class="form1" type="password" name="confirsenha" id="confirsenha" placeholder="Confirmar senha*"required>
 
